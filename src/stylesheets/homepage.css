@@ -1,1 +1,51 @@
+header{
+    height: 20%;
+    background-color: aquamarine;
+    color: blue;
+    padding:1rem 2rem;
+}
 
+h1{
+    padding-bottom: 2rem;
+}
+
+header p{
+    font-size: 1.1rem;
+    padding-bottom: 1.3rem;
+}
+
+.lg-btn{
+    background-color: black;
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "hdr2 hdr2"
+    "fig fig2";
+}
+
+hr{
+    grid-area: hdr2;
+}
+
+figure:nth-child(2){
+    grid-area: fig1;
+    margin: 0 1rem;
+}
+
+figure:nth-child(3){
+    grid-area: fig2;
+}
+
+img{
+    windth: 100%;
+}

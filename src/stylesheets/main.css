@@ -1,1 +1,76 @@
 /* Your styles go here */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    text-align: center;
+
+}
+
+nav > a{
+     text-decoration: none;
+     color:antiquewhite;
+     font-size: 1.2rem;
+}
+
+.mainNav{
+    grid-column: 3/span 1;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 2rem;
+
+}
+
+.mainNav a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color:black;
+}
+
+header{
+
+}
+body{
+
+}
+
+footer{
+    margin-top: 2rem;
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+}
+
+.footerNav{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+
+}
+
+@media all and (min-width:700px ){
+    nav{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr)
+    align-items: center;
+
+}
+
+nav > a{
+     text-decoration: none;
+     color:antiquewhite;
+     font-size: 1.2rem;
+}
+
+.mainNav{
+    grid-column: 3/span 1;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 1rem;
+}
+}
