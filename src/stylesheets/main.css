@@ -1,76 +1,114 @@
-/* Your styles go here */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-nav{
-    text-align: center;
-
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #fcefee, #e0f7fa);
+  color: #444;
 }
 
-nav > a{
-     text-decoration: none;
-     color:antiquewhite;
-     font-size: 1.2rem;
+/* Header with Gradient */
+header {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.mainNav{
-    grid-column: 3/span 1;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0 2rem;
-
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
 }
 
-.mainNav a{
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a {
   text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe3f1;
+}
+
+/* Banner Section */
+.banner {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-bottom: 4px solid #f8bbd0;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
   font-size: 1.2rem;
-  color:black;
+  margin-bottom: 2rem;
 }
 
-header{
-
-}
-body{
-
-}
-
-footer{
-    margin-top: 2rem;
-   display: flex;
-   gap: 2rem;
-   justify-content: center;
+.btn {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-.footerNav{
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-
+.btn:hover {
+  background: linear-gradient(to right, #a6c1ee, #fbc2eb);
 }
 
-@media all and (min-width:700px ){
-    nav{
-    display: grid;
-    grid-template-columns: repeat(3, 3fr)
-    align-items: center;
-
+/* Image Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
 }
 
-nav > a{
-     text-decoration: none;
-     color:antiquewhite;
-     font-size: 1.2rem;
+figure {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
 }
 
-.mainNav{
-    grid-column: 3/span 1;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-right: 1rem;
+figure img {
+  width: 100%;
+  border-radius: 10px;
 }
+
+figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #a6c1ee, #fbc2eb);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 2rem;
 }

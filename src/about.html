@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>Assignment Starter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.css">
-   <link rel="stylesheet" href="./stylesheets/homepage.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/about-me.css" />
 </head>
-
 <body>
-   <nav>
-    <a href="index.html">Sara Sofia Evisionering</a>
-    <ul class="mainNav">
-    <li><a href="index.html">Principal</a></li>
-    <li><a href="favorites.html">Favoritos</a></li>
-    <li><a href="journey.html">viaje</a></li>
-    <li><a href="about.html">Sobre mi</a></li>
-    </ul>
-   </nav>
 
-   <header></header>
-
-   <main></main>
-
-   <footer>
-    <span>&copy; 2025 - Sara Sofia</span>
-    <div>
-      <ul class="footerNav">
-        <li><a href="tiktok.com">Tik Tok</a></li>
-        <li><a href="Instagram.com">Instagram</a></li>
-      
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="journey.html">My Journey</a></li>
+        <li><a href="https://www.western.edu/" target="_blank">Western Colorado</a></li>
       </ul>
-    </div>
-   </footer>
-  
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 1400!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <section class="bio">
+      <img src="src/images/me.jpg" alt="Photo of Sara Sofia">
+      <div>
+        <h2>Hello! I'm Sara Sofia</h2>
+        <p>
+          I'm a passionate and creative student who loves designing beautiful things and learning new skills. 
+          I enjoy spending time with my family, exploring art, and working on projects that let me express myself.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💖 by Sara Sofia © 2025</p>
+  </footer>
+
 </body>
 </html>
+
 
 

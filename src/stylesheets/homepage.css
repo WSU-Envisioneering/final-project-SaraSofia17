@@ -1,51 +1,116 @@
-header{
-    height: 20%;
-    background-color: aquamarine;
-    color: blue;
-    padding:1rem 2rem;
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #FFFEF8, #FFF9C4);
+  color: #444;
 }
 
-h1{
-    padding-bottom: 2rem;
+/* Header with Gradient - Pink to Yellow */
+header {
+  background: linear-gradient(to right, #F8BBD0, #FFF9C4);
+  color: #333;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-header p{
-    font-size: 1.1rem;
-    padding-bottom: 1.3rem;
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
 }
 
-.lg-btn{
-    background-color: black;
-    text-decoration: none;
-    color: bisque;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 1rem 3rem;
-    border-radius: .5rem;
-    margin-bottom: 2rem;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "hdr2 hdr2"
-    "fig fig2";
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-hr{
-    grid-area: hdr2;
+nav a:hover {
+  color: #ec407a; /* darker pink */
 }
 
-figure:nth-child(2){
-    grid-area: fig1;
-    margin: 0 1rem;
+/* Banner Section */
+.banner {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #FFF9C4, #F8BBD0);
+  border-bottom: 4px solid #F8BBD0;
+  color: #333;
 }
 
-figure:nth-child(3){
-    grid-area: fig2;
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-img{
-    windth: 100%;
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: linear-gradient(to right, #F8BBD0, #FFF9C4);
+  color: #333;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #FFF176, #F8BBD0);
+}
+
+/* Image Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+}
+
+figure {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 300px;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #FFF9C4, #F8BBD0);
+  text-align: center;
+  padding: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin-top: 2rem;
 }
