@@ -5,7 +5,6 @@ body {
   color: #444;
 }
 
-/* Header */
 header {
   background: linear-gradient(to right, #F8BBD0, #FFF9C4);
   color: #333;
@@ -40,7 +39,6 @@ nav a:hover {
   color: #ec407a;
 }
 
-/* Main Content */
 .journey-container {
   padding: 3rem 2rem;
   max-width: 800px;
@@ -65,7 +63,6 @@ p {
   font-size: 1.1rem;
 }
 
-/* Footer */
 footer {
   background: linear-gradient(to right, #FFF9C4, #F8BBD0);
   text-align: center;
@@ -75,3 +72,18 @@ footer {
   margin-top: 2rem;
 }
 
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ec407a;
+}

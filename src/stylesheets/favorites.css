@@ -5,7 +5,6 @@ body {
   color: #444;
 }
 
-/* Header */
 header {
   background: linear-gradient(to right, #F8BBD0, #FFF9C4);
   color: #333;
@@ -40,14 +39,12 @@ nav a:hover {
   color: #ec407a;
 }
 
-/* Main Content */
 .favorites-container {
   padding: 3rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-/* List Section */
 .list-section {
   margin-bottom: 4rem;
 }
@@ -63,7 +60,6 @@ ol {
   line-height: 1.8;
 }
 
-/* Table Section */
 .table-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -102,7 +98,6 @@ tr:hover {
   background-color: #fff1f7;
 }
 
-/* Footer */
 footer {
   background: linear-gradient(to right, #FFF9C4, #F8BBD0);
   text-align: center;
@@ -112,3 +107,18 @@ footer {
   margin-top: 2rem;
 }
 
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ec407a;
+}

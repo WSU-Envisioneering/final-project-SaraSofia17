@@ -1,4 +1,3 @@
-/* Base Styles */
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -6,7 +5,6 @@ body {
   color: #444;
 }
 
-/* Header with Gradient */
 header {
   background: linear-gradient(to right, #fbc2eb, #a6c1ee);
   color: white;
@@ -41,7 +39,6 @@ nav a:hover {
   color: #ffe3f1;
 }
 
-/* Banner Section */
 .banner {
   text-align: center;
   padding: 4rem 2rem;
@@ -74,7 +71,6 @@ nav a:hover {
   background: linear-gradient(to right, #a6c1ee, #fbc2eb);
 }
 
-/* Image Gallery */
 .gallery {
   display: flex;
   justify-content: center;
@@ -103,7 +99,6 @@ figcaption {
   color: #666;
 }
 
-/* Footer */
 footer {
   background: linear-gradient(to right, #a6c1ee, #fbc2eb);
   text-align: center;
@@ -111,4 +106,20 @@ footer {
   color: white;
   font-weight: 600;
   margin-top: 2rem;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ec407a;
 }

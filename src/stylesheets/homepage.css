@@ -1,4 +1,3 @@
-/* Base Styles */
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -6,7 +5,6 @@ body {
   color: #444;
 }
 
-/* Header with Gradient - Pink to Yellow */
 header {
   background: linear-gradient(to right, #F8BBD0, #FFF9C4);
   color: #333;
@@ -38,10 +36,9 @@ nav a {
 }
 
 nav a:hover {
-  color: #ec407a; /* darker pink */
+  color: #ec407a; 
 }
 
-/* Banner Section */
 .banner {
   text-align: center;
   padding: 4rem 2rem;
@@ -76,7 +73,6 @@ nav a:hover {
   background: linear-gradient(to right, #FFF176, #F8BBD0);
 }
 
-/* Image Gallery */
 .gallery {
   display: flex;
   justify-content: center;
@@ -105,7 +101,6 @@ figcaption {
   color: #666;
 }
 
-/* Footer */
 footer {
   background: linear-gradient(to right, #FFF9C4, #F8BBD0);
   text-align: center;
@@ -113,4 +108,20 @@ footer {
   color: #333;
   font-weight: 600;
   margin-top: 2rem;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ec407a;
 }
